@@ -41,7 +41,7 @@ class DrawView extends View {
 
     }
 
-   /* private void DrawMatrix(BasicBlock[][] matrix, Canvas canvas) {
+   private void DrawMatrix(BasicBlock[][] matrix, Canvas canvas) {
         for (int i = 0; i < 24; i++) {
             for (int j = 0; j < 20; j++) {
                 if (matrix[i][j].state == BasicBlockState.ON_EMPTY)
@@ -73,7 +73,7 @@ class DrawView extends View {
             canvas.drawRect(42 + block.coordinate.x * 50, yOffset + block.coordinate.y * 50 + 2, 88 + block.coordinate.x * 50, yOffset + (block.coordinate.y + 1) * 50 - 2, p);
 
         }
-    }*/
+    }
 
     private void Boundary(Canvas canvas) {
         paint.setColor(Color.BLACK);
@@ -111,7 +111,7 @@ class DrawView extends View {
         paint.setStrokeWidth(5f);
         Boundary(canvas);
         grid(canvas);
-        /*if (gameState.status) {
+        if (gameState.status) {
             Clear(gameState.board, canvas);
             DrawMatrix(gameState.board, canvas);
             DrawTetramino(gameState.falling, canvas);
@@ -122,9 +122,9 @@ class DrawView extends View {
             DrawTetramino(gameState.falling, canvas);
             paint.setColor(Color.BLACK);
             paint.setTextSize(200);
-            canvas.drawText(getResources().getString(R.string.game_over), 60, 800, paint);
+            canvas.drawText(getResources().getString(R.string.app_name), 60, 800, paint);
             PrintScore(gameState.score, canvas);
-        }*/
+        }
 
     }
 

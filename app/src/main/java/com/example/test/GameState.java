@@ -7,15 +7,15 @@ class GameState {
     boolean status;
     int score;
     boolean pause;
-    //BasicBlock[][] board;
-   // Tetramino falling;
+    BasicBlock[][] board;
+    Tetramino falling;
     boolean difficultMode;
     private int rows;
     private int columns;
-    private Integer ctr;}
-//    private SparseArray<Tetramino> tetraminos;
+    private Integer ctr;
+    private SparseArray<Tetramino> tetraminos;
 
-  /*  GameState(int rows, int columns, TetraminoType fallingTetraminoType) {
+    GameState(int rows, int columns, TetraminoType fallingTetraminoType) {
 
         this.rows = rows;
         this.columns = columns;
@@ -275,5 +275,5 @@ class GameState {
 
         return false;
     }
-}*/
+}
 
