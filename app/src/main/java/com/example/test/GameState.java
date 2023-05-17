@@ -12,7 +12,7 @@ class GameState {
     boolean difficultMode;
     private int rows;
     private int columns;
-    private Integer ctr;
+    private Integer ctr;}
 //    private SparseArray<Tetramino> tetraminos;
 
   /*  GameState(int rows, int columns, TetraminoType fallingTetraminoType) {
